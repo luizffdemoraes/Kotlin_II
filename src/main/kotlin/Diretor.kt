@@ -1,9 +1,9 @@
-class Gerente(
+class Diretor(
     nome: String,
     cpf: String,
     salario: Double,
-    val senha: Int
-    //Herança reutilizar comportamentos
+    val senha: Int,
+    val plr: Double
 ) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
 
 //    fun bonificacao(): Double {
@@ -17,6 +17,5 @@ class Gerente(
 
         return false
     }
-
 
 }
