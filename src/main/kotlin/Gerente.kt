@@ -6,9 +6,11 @@ class Gerente(
     //Herança reutilizar comportamentos
 ) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
 
-//    fun bonificacao(): Double {
-//        return salario * 0.1
-//    }
+
+    override val bonificacao: Double
+        get() {
+            return salario * 0.2
+        }
 
     fun autentica(senha: Int): Boolean{
         if(this.senha == senha){
