@@ -1,5 +1,5 @@
 fun testaFuncionarios() {
-    val alex = Funcionario(
+    val alex = Analista(
         nome = "Alex",
         cpf = "099.934.600-87",
         salario = 2500.0
