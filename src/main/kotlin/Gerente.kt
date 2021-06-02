@@ -4,7 +4,8 @@ class Gerente(
     salario: Double,
     senha: Int
     //Herança reutilizar comportamentos
-) : FuncionarioAdmin(nome = nome, cpf = cpf, salario = salario, senha = senha) {
+) : FuncionarioAdmin(nome = nome, cpf = cpf, salario = salario, senha = senha
+), Autenticavel {
 
 
      override  val bonificacao: Double

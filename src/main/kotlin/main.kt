@@ -5,7 +5,7 @@ fun main() {
 //    testaContasDiferentes()
 //    testaCopiasEReferencias()
 //    testaFuncionarios()
-//    testaAutenticacao()
+    testaAutenticacao()
 
 
 
