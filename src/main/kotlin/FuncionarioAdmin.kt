@@ -2,12 +2,14 @@ abstract class FuncionarioAdmin(
     nome: String,
     cpf: String,
     salario: Double,
-    val senha: Int
+    protected val senha: Int
 
-) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
+) : Funcionario(nome = nome, cpf = cpf, salario = salario
+), Autenticavel {
     //properties abistrato a classe mãe não e responsavel pela implementação
 
-    fun autentica(senha: Int): Boolean {
+    override fun autentica(senha: Int): Boolean {
+        println("autentica funcionario admin")
         if (this.senha == senha) {
             return true
         }

@@ -4,12 +4,12 @@ class Diretor(
     salario: Double,
     senha: Int,
     val plr: Double
-) : FuncionarioAdmin(nome = nome, cpf = cpf, salario = salario, senha = senha
-), Autenticavel {
+) : FuncionarioAdmin(nome = nome, cpf = cpf, salario = salario, senha = senha) {
+
 
     override val bonificacao: Double
         get() {
             println("bonificação diretor")
-            return  salario + plr
+            return salario + plr
         }
 }
