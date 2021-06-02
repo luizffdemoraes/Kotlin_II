@@ -1,15 +1,14 @@
 abstract class FuncionarioAdmin(
-    val nome: String,
-    val cpf: String,
-    val salario: Double,
+    nome: String,
+    cpf: String,
+    salario: Double,
     val senha: Int
 
-) {
+) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
     //properties abistrato a classe mãe não e responsavel pela implementação
-    abstract val bonificacao: Double
 
-    fun autentica(senha: Int): Boolean{
-        if(this.senha == senha){
+    fun autentica(senha: Int): Boolean {
+        if (this.senha == senha) {
             return true
         }
 
