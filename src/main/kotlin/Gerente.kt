@@ -7,10 +7,10 @@ class Gerente(
 ) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
 
 
-    override val bonificacao: Double
+     override  val bonificacao: Double
         get() {
             println("bonificação gerente")
-            return super.bonificacao + salario
+            return  salario
         }
 
     fun autentica(senha: Int): Boolean{

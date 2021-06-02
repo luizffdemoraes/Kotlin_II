@@ -4,12 +4,8 @@ abstract class Funcionario(
     val salario: Double
 
 ) {
-    //properties
-    open val bonificacao: Double
-        get() {
-            println("bonificação funcionario")
-            return salario * 0.1
-        }
+    //properties abistrato a classe mãe não e responsavel pela implementação
+    abstract val bonificacao: Double
 
     //properties
 //    open val bonificacao: Double
