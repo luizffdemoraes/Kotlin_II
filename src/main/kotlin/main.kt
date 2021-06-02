@@ -3,9 +3,9 @@ fun main() {
 
 //    testaComportamentosConta()
 //    testaFuncionarios()
-//    testaContasDiferentes()
-
-    testaFuncionarios()
+    testaContasDiferentes()
+    testaCopiasEReferencias()
+//    testaFuncionarios()
 
 }
 
